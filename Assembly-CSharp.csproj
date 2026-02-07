@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Cursor.cs" />
+    <Compile Include="Assets\Health.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\PlayerFollower.cs" />
     <Compile Include="Assets\PlayerMove.cs" />

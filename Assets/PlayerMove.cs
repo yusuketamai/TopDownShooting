@@ -13,6 +13,18 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private Cursor cursor;
 
+    // 最大体力
+    private float maxHealth_ = 3;
+
+    //現在体力
+    private float currentHealth_ ;
+
+    //自身のコライダー
+    protected Collider collider_;
+
+
+
+
     private void Start()
     {
         // RigidBodyの取得
@@ -60,6 +72,14 @@ public class PlayerMove : MonoBehaviour
         transform.LookAt(lookAt);
     }
 
+    private void Awake()
+    {
+        currentHealth_ = maxHealth_;
 
+        collider_ = GetComponent<Collider>();
+
+
+
+    }
 
 }
